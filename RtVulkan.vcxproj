@@ -91,6 +91,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Usagi\Usagi\Usagi.vcxproj">
+      <Project>{4250e1c0-ea0b-4575-bc04-11e7f83c2ed4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VulkanBatchResource.hpp" />
+    <ClInclude Include="VulkanBufferAllocation.hpp" />
+    <ClInclude Include="VulkanEnumTranslation.hpp" />
+    <ClInclude Include="VulkanFramebuffer.hpp" />
+    <ClInclude Include="VulkanGpuBuffer.hpp" />
+    <ClInclude Include="VulkanGpuCommandPool.hpp" />
+    <ClInclude Include="VulkanGpuDevice.hpp" />
+    <ClInclude Include="VulkanGpuImage.hpp" />
+    <ClInclude Include="VulkanGpuImageView.hpp" />
+    <ClInclude Include="VulkanGraphicsCommandList.hpp" />
+    <ClInclude Include="VulkanGraphicsPipeline.hpp" />
+    <ClInclude Include="VulkanGraphicsPipelineCompiler.hpp" />
+    <ClInclude Include="VulkanHelper.hpp" />
+    <ClInclude Include="VulkanMemoryPool.hpp" />
+    <ClInclude Include="VulkanPooledImage.hpp" />
+    <ClInclude Include="VulkanRenderPass.hpp" />
+    <ClInclude Include="VulkanResourceInfo.hpp" />
+    <ClInclude Include="VulkanSampler.hpp" />
+    <ClInclude Include="VulkanSemaphore.hpp" />
+    <ClInclude Include="VulkanShaderResource.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VulkanBufferAllocation.cpp" />
+    <ClCompile Include="VulkanEnumTranslation.cpp" />
+    <ClCompile Include="VulkanExtensions.cpp" />
+    <ClCompile Include="VulkanFramebuffer.cpp" />
+    <ClCompile Include="VulkanGpuBuffer.cpp" />
+    <ClCompile Include="VulkanGpuCommandPool.cpp" />
+    <ClCompile Include="VulkanGpuDevice.cpp" />
+    <ClCompile Include="VulkanGpuImage.cpp" />
+    <ClCompile Include="VulkanGpuImageView.cpp" />
+    <ClCompile Include="VulkanGraphicsCommandList.cpp" />
+    <ClCompile Include="VulkanGraphicsPipeline.cpp" />
+    <ClCompile Include="VulkanGraphicsPipelineCompiler.cpp" />
+    <ClCompile Include="VulkanMemoryPool.cpp" />
+    <ClCompile Include="VulkanPooledImage.cpp" />
+    <ClCompile Include="VulkanRenderPass.cpp" />
+    <ClCompile Include="VulkanSampler.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

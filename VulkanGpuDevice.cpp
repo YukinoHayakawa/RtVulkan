@@ -73,6 +73,11 @@ VkBool32 usagi::VulkanGpuDevice::debugMessengerCallback(
         USAGI_OPT_STRING(callback_data->pMessageIdName),
         callback_data->pMessage);
 
+    if(level == LoggingLevel::error)
+    {
+        exception::printStacktrace();
+    }
+
     if(callback_data->objectCount > 0)
     {
         log(level, "    Objects - {}",
